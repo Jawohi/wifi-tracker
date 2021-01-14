@@ -1,4 +1,4 @@
-# wifi-tracker
+# tracker
 
 ## Project setup
 ```
