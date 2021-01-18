@@ -92,7 +92,7 @@ async function getTrackingData() {
 
   var res = await fetch("http://localhost/device-tracker-backend-master/track.php");
   var data = await res.json();
-  trackingdata = JSON.parse(data);
+  var trackingdata = JSON.parse(data);
 
   /*
   var json = '{"clients":[{"mac":"e0:cb:ee:46:58:fa","x":2.000251321150406,"y":2.298495242436292,"acc":0.5},{"mac":"e0:cb:ee:46:58:fa","x":3.800251321150406,"y":2.798495242436292,"acc":0.5}],"tracker":[{"name":"Tracker: 1","x":2.4,"y":0},{"name":"Tracker: 2","x":0,"y":3.5},{"name":"Tracker: 3","x":4,"y":3.5},{"name":"Tracker: 4","x":4,"y":2.4},{"name":"Tracker: 5","x":4,"y":0}],"room":{"x":4.5,"y":4}}'
